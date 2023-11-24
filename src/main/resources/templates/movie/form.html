@@ -8,19 +8,20 @@
 <body>
 
     <h1>Cadastrar Filme</h1>
+    <h2>Adicione novas aventuras a sua lista!</h2>
 
     <div class="content">
         <form action="" method="post" th:object="${movie}">
-            <label for="title">Titulo</label>
+            <label for="title">Titulo do filme</label>
             <input type="text" th:field="*{title}">
             <span th:errors="*{title}"></span>
 
 
-            <label for="description">Descricao</label>
+            <label for="description">Descrição do filme</label>
             <textarea id="description" th:field="*{description}"></textarea>
             <span th:errors="*{description}"></span>
 
-            <label for="genre">Genero</label>
+            <label for="genre">Genero da película</label>
             <input type="text" th:field="*{genre}">
             <span th:errors="*{genre}"></span>
 
