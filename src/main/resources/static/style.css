@@ -6,7 +6,7 @@
     --dark-color: #003366; /* Dark Blue */
     --active-color: #E60000; /* Red */
     --primary-font: 'Pridi', serif;
-    --font-color:  #FFFFFF; /* White */
+    --font-color: #ffffff; /* White */
 }
 
 
@@ -172,7 +172,7 @@ textarea{
     padding: 1rem;
     font: var(--primaty-font);
     color: var(--font-color);
-    background-color: transparent;
+    background-color: white;
     border: none;
     box-shadow: inset -4px -4px 10px rgba(85, 85, 85, 0.25),
     inset 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -184,7 +184,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="number"]:focus,
 textarea:focus{
-    box-shadow: 0px 0px 10px #00A439,
+    box-shadow: 0px 0px 10px #b47c7c,
     inset -4px -4px 10px rgba(85, 85, 85, 0.25),
     inset 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -222,6 +222,15 @@ button.btn{
     border-radius: 8px;
     box-shadow: -4px -4px 10px rgba(85, 85, 85, 0.25),
     4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover{
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px rgba(85, 85, 85, 0.25),
+    4px 4px 10px rgba(0, 0, 0, 0.25);
+    color: #003366;
+    background: white;
 }
 
 .alert{
