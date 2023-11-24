@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Cadastrar Filme</h1>
+
+    <div class="content">
+        <form action="" method="post" th:object="${movie}">
+            <label for="title">Titulo</label>
+            <input type="text" th:field="*{title}">
+            <input th:errors="*{title}"></span>
+
+
+            <label for="description">Descricao</label>
+            <textarea id="description" th:field="*{description}"></textarea>
+            <span th:errors="*{description}"></span>
+
+            <label for="genre">Genero</label>
+            <input type="text" th:field="*{genre}">
+            <span th:errors="*{genre}"></span>
+
+            <div class="actions">
+
+                <a href="/movie" class="btn">Cancelar</a>
+                <button class="btn blue">salvar</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
