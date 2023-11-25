@@ -11,7 +11,7 @@
     <h2>Adicione novas aventuras a sua lista!</h2>
 
     <div class="content">
-        <form action="" method="post" th:object="${movie}">
+        <form th:action="${'/movie/new'}" method="post" th:object="${movie}">
             <label for="title">Titulo do filme</label>
             <input type="text" th:field="*{title}">
             <span th:errors="*{title}"></span>

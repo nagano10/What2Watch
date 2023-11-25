@@ -6,7 +6,7 @@
     --dark-color: #003366; /* Dark Blue */
     --active-color: #E60000; /* Red */
     --primary-font: 'Pridi', serif;
-    --font-color: #ffffff; /* White */
+    --font-color: #000000; /* White */
 }
 
 
@@ -199,6 +199,7 @@ textarea.invalid{
 }
 
 textarea{
+    color: black;
     resize: vertical;
     height: 5rem;
     width: 20rem;
