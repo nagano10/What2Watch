@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h2>What 2 Watch?</h2>
-    <h4>Seu catálogo de filmes!</h4>
-
-    <a href="/movie/new" class="btn">Novo Filme</a>
+    <img class="img1" src="image/LogoW2w.png"/>
+    <div class="titulo">
+        <h2>What 2 Watch?</h2>
+        <h4>Seu catálogo de filmes!</h4>
+    </div>
+    <a href="/movie/new" class="btn" id="new-movie" >Novo Filme</a>
 
     <div class="content">
         <div class="movies">
@@ -19,7 +20,7 @@
                 <p th:text="${movie.description}"></p>
                 <div class="actions">
                     <form th:action="@{'/movie/{id}'(id=${movie.id})}" th:method="delete">
-                        <button>apagar</button>
+                        <button class="btn">apagar</button>
                     </form>
                 </div>
             </div>
